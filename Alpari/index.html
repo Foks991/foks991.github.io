@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="ru-UA">
+<head>
+	<title>ALPARI</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="images/default.png"/>						      					<!--favicon-->
+    <meta charset="utf-8">																				  					<!--charset-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">								  					<!--viewport-->	
+	<link rel="stylesheet" href="css/style.css">														  					<!--Подключение css по defaulty-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>			  					<!--jquery-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  					<!--Bootstrap-->	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>	  					<!--Bootstrap--> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>			  					<!--Bootstrap--> 
+	<script src="js/jquery.easing.js"></script>															  					<!--Animated tag cloud--> 
+	<script src="js/jquery.tagcloud.min.js"></script>													  					<!--Animated tag cloud--> 
+	<script src="js/script.js"></script>																  					<!--Js-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	 	<!--Icon Top nav-->
+</head>
+<body>
+	<!--BLOCK 1-->
+	<div class="header-wrap" id="header-wrap">
+		<div class="row header">
+			<!--Top quote-->
+			<div class="col-sm top-quote text-center" style="max-width:1100px;margin:0 auto;">
+				<p>“Успех в торговле приходит от хорошего знания рынков и еще лучшего знания самих себя.”</p>
+			</div>
+			<!--Tag Cloud-->
+			<!-- <div class="col-sm cloud-wrap" > -->
+				<!-- <div class="cloud"> -->
+					<!-- <ul id="tag-cloud" id="id-cloud">  -->
+						<!-- <li><a href="#data" class="a-cloud">Данные</a></li>  -->
+						<!-- <li><a href="#technology" class="a-cloud">Технологии</a></li>  -->
+						<!-- <li><a href="#environment" class="a-cloud">Окружающая среда</a></li>  -->
+						<!-- <li><a href="#learn" class="a-cloud">Обучение</a></li>  -->
+						<!-- <li><a href="#help" class="a-cloud">Сопровождение</a></li>  -->
+						<!-- <li><a href="#news" class="a-cloud">Новости</a></li>  -->
+						<!-- <li><a href="#community" class="a-cloud">Комьюнити</a></li> -->
+					<!-- </ul> -->
+				<!-- </div> -->
+			<!-- </div>  -->
+		</div>
+		<!--Topnav menu-->
+		<div class="wrap-wrap">
+			<div class="nav-wrap">
+				<div class="topnav" id="myTopnav">
+					<a href="#data" class="active">Данные</a>
+					<a href="#technology">Технологии</a>
+					<a href="#environment">Окружающая среда</a>
+					<a href="#learn">Обучение</a>
+					<a href="#help">Сопровождение</a>
+					<a href="#news">Новости</a>
+					<a href="#community">Комьюнити</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</div>		
+			</div>
+		</div>	
+		<!--Slogan-->
+		<div id="data">
+			<div class="slogan">
+				<div class="slogan-text">
+				<h1>&lt;Alpari&gt;</h1>			
+				<h2>мультисервисная платформа для осознанного трейдинга</h2>
+				<p>Мы ценим время, поэтому собираем все самое важное в одном месте.</p>			
+				</div>
+			</div>
+			<!--Description-->
+			<div class="flex-container">
+				<div class="flex-container-left">
+					<p>Интересует волатильность ликвидных акций, обстановка на валютном рынке, объемы торгов криптоактивами? Мы решаем проблему миллиона открытых вкладок. Теперь все данные топовых финансовых рынков в реальном времени вы можете найти, воспользовавшись платформой Alpari</p>
+				</div>
+				<div class="flex-container-right">
+					<p>Но это не все. Мы заботимся о качестве предоставляемых даннных. Уникальная система множественных подтверждений позволяет мониторить массивный поток данных, который поступает к нам из разных уголков земного шара, и предоставлять нашим клиентам только проверенную информацию</p>
+				</div>
+			</div>
+			<!--Request-->		
+			<div class="request text-center">
+				<p>Оставьте заявку, и наш консультант подробно расскажет о качестве данных платформы <span style="color:#EB926E;">Alpari.</span></p>
+				<button class="open-button" class="btn btn-success btn-lg open-button">Оставить заявку</button>
+			</div>
+			<!--Arrows-->
+			<div id="asddd" class="mx-auto mt-1 d-flex justify-content-center"style="max-width:1200px;">
+				<div class="p-2 w-50 text-center" id="asddd" >
+					<span class="text-white arrow">&dArr;</span>
+				</div>
+				<div class="p-2 w-50 text-center" id="asddd" >
+					<span class="text-white arrow">&dArr;</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Request form-->
+	<div class="form-popup" id="myForm">
+	    <form action="/action_page.php" class="form-container">
+			<span id="forma">&#10006;</span>
+			<h1>Оставьте заявку и мы свяжемся с вами</h1>
+			<label for="name">Ваше Имя:</label>
+			<input type="text" placeholder="Как Вас зовут?" name="name" required>
+			<input type="text" placeholder="Введите контактный телефон" name="phone" required>
+			<button type="submit" class="btn">Отправить</button>
+	    </form>
+	</div>
+	<!--BLOCK 2-->
+	<!--Wrap-->
+	<div class="second-wrap">
+		<!--Content-->
+		<div class="content mx-auto justify-content-center h-100">
+			<!--Column 1-->
+			<div class="column p-3" id="technology">
+				<h1 class="p-3">"Все, что у роботов получается быстрее и дешевле, в итоге начнут делать роботы."</h1>
+				<p class="second-wrap-p">Мы не навязываем будущее, мы адаптируем его для профессионалов, внедряя самые передовые тренды финтеха и IT. Уже сейчас мы используем алгоритмы машинного обучения, включая нейросети, для прогнозирования движения рынков. Наши сигналы отличаются высокой точностью и радуют пользователей оптимальной доходностью. </p>
+				<div class="col-img container">
+					<img src="images/automatization.jpg">
+				</div>
+				<p class="second-wrap-p">Мы также стремимся максимально автоматизировать торговые практики и рутины трейдеров, ведь одна из основных задач платформы <span style="color:#FAEBE1;font-size:18px;">Alpari</span> — вывести работу с финансовыми рынками на качественно новый уровень.</p>
+				<p class="second-wrap-p text-center h5 p-2 callback-request" style="color:#FAECE1;background-color:#122B69;border-radius:5px;">Свяжитесь с нашим консультантом, чтобы узнать больше об использовании новых технологий на платформе Alpari.</p>
+			</div>
+			<!--Callback and goTop images-->
+			<img class="callback" src="images/44929.png" style="position:fixed;bottom:25px;left:25px;cursor:pointer;z-index:5;">
+			<a onclick="return up()"><img class="goTop" src="images/up.png" style="position:fixed;bottom:25px;right:25px;cursor:pointer;z-index:5;"></a>
+			<!-- <a href="" style="height:30px;width:150px;background-color:#27C944;position:fixed;top:0;left:0;text-align:center;cursor:pointer;color:white;">Waxom</a> -->
+			<!--Column 2-->
+			<div class="column p-3" id="environment">
+				<div><p class="butie">"Бытие определеяет сознание.”</p></div>
+				<p class="second-wrap-p">При создании оптимальной рабочей среды для трейдеров мы руководствуемся двумя принципами: простотой и практичностью пользовательского опыта. Мы собрали в рабочем инструментарии платформы все самое необходимое для профессионального технического анализа. Пользователям удобно судить, когда все под рукой.</p>
+				<div class="col-img container">
+					<img src="images/neural-network.jpg">
+				</div>
+				<p class="second-wrap-p">На <span style="color:#FAEBE1;font-size:18px;">Alpari</span> вы также можете провести глубокий анализ своих портфелей. Система, оснащенная искусственным интеллектом, позволяет выявить слабые звенья и диверсифицировать риски.</p>
+				<p class="text-center h4 p-register" style="color:white;">Интересно?</p>				
+				<div class="container text-center">
+					<button class="mt-3 btn btn-success btn-lg">Регистрация</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--BLOCK 3-->
+	<div class="third-wrap">
+		<div class="content h-100 mx-auto">
+			<div id="column-wrap" class="flex-column">
+				<!--row 1-->
+				<div class="d-flex roy" id="learn">
+					<div class="text-block">
+						<h1>“Тренировка не приводит к идеальным результатам, она приводит к стабильным результатам.” </h1>
+						<p class="p-3 pb-1 ">Скальпинг, арбитраж, деривативы, короткие позиции, продажа волатильности... Хотите узнать, что это, или усовершенствовать свои навыки в разных торговых техниках и стратегиях? На платформе Alpari дейтсвуют постоянные онлайн-курсы и вебинары разного уровня сложности. Их ведут профессиональные трейдеры, у которых за плечами опыт увеличения прибыли в десятки и сотни раз. Кто как не они знают всю изнанку торговли финансовыми активами.</p>
+						<p class="pl-3">Но даже после прохождения обучающих курсов мы помогаем нашим пользователям, предоставляя дополнительные консультации. Мы также проводим сертификацию профессиональных трейдеров, открывая дорогу для престижного трудоустройства. </p>
+						<h2>Записаться на курс “Быстрый старт”, а также пройти экспресс-тестирование можно уже сейчас.</h2>
+						<div class="but">
+							<button class="open-button btn btn-success m-3 p-2">Записатся на курс</button>
+							<button class="open-button btn btn-success m-3 p-2">Пройти тест</button>
+						</div>
+					</div>
+					<div class="img-block p-2">
+						<img src="images/webinar.jpeg">
+					</div>
+				</div>
+				<!--row 2-->
+				<div class="d-flex roy" id="help">
+					<div class="img-block p-2">
+						<img src="images/udachnaya-sdelka.jpg">
+					</div>
+					<div class="text-block">
+						<h1>“Всякий раз, когда я вхожу в позицию, я знаю, где стоит мой стоп.”</h1>
+						<p class="p-3 pb-1">Трейдинг — высокодоходная инвестиционная практика с большими рисками. Допустим, у вас есть желание вступить в игру и получить сверхприбыль, но времени или навыков лично заниматься торгами не хватает. </p>
+						<p class="pl-3">Мы предлагаем услуги профессиальных трейдеров и предоставляем возможности вступления в ряд закрытых хедж-фондов. Плаформа Alpari выструпает посредником для формирования доверительных партнерских отношений между всеми сторонами. </p>
+						<h2>Для получения более детальной информации об это заполните форму:</h2>
+						<div class="but"><button class="open-button btn btn-success m-3 p-2">Форма</button></div>
+					</div>
+				</div>
+				<!--row 3-->
+				<div class="d-flex roy" id="news">
+					<div class="text-block">
+						<h1>“Цена начинает реагировать задолго до новостей, новости или плохие отчеты только усугубляют тренд.” </h1>
+						<p class="p-3">Мир информационно перегружен, но для успешного трейдинга нужно быть в курсе всего. Поэтому мы уделяем особое внимание новостному разделу Alpari. Для специального ежедневного дайджеста наши редакторы делают подборку экономических, финансовых и бизнес-новостей со всего мира. Обзоры, аналитика, мнения — выжимки главного в доступной форме и без воды.</p>
+						<h2>Вы узнаете о главных событиях дня первыми через канал, который удобен именно для вас.</h2>
+						<div class="d-flex justify-content-center mb-3">
+							<div class="p-2 sn"><img class="social-img" src="images/telegram.png"></div>
+							<div class="p-2 sn"><img class="social-img" src="images/fb.png"></div>
+							<div class="p-2 sn"><img class="social-img" src="images/gmail.png"></div>
+						</div>	
+					</div>
+					<div class="img-block p-2">
+						<img src="images/81049249.jpg">
+					</div>
+				</div>
+				<!--row 4-->
+				<div class="d-flex roy" id="community">
+					<div class="img-block p-2">
+						<img src="images/svet.jpg">
+					</div>
+					<div class="text-block">
+						<h1>“Нас определяет круг общения.”</h1>
+						<p class="p-3">Качество профессионального общения серьезно влияет на наши достижения в работе. Поэтому Alpari целенаправленно развивает сообщество трейдеров таким образом, чтобы сами участники были заинтересованы в создании эффективного нетворкинга и обмене полезным контентом. У вас есть мнение, гипотезы, экспертиза и вы хотите ею делиться, формируя свою репутацию и зарабатывая рейтинги? Тогда вам у нас понравится. </p>
+						<h2>Комьюнити Alpari ждет вас!</h2>
+						<div class="but"><button class="open-button btn btn-success m-3 p-2">Присоидениться</button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body> 
+</html>

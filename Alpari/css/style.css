@@ -1,0 +1,560 @@
+/*Fonts*/
+@font-face {
+	font-family: "Myriad"; 
+	src: url("../fonts/MyriadPro-Regular.otf"); 
+}
+@font-face {
+	font-family: "Raleway ExtraBold"; 
+	src: url("../fonts/Raleway-ExtraBold.ttf"); 
+}
+@font-face {
+	font-family: "Montserrat Light"; 
+	src: url("../fonts/Montserrat-Light.ttf"); 
+}
+@font-face {
+	font-family: "Raleway SemiBold"; 
+	src: url("../fonts/Raleway-SemiBold.ttf"); 
+}
+@font-face {
+	font-family: "Raleway Medium"; 
+	src: url("../fonts/Raleway-Medium.ttf"); 
+}
+
+/*Tag cloud animations*/
+#tag-cloud { position:relative; top:10px; left:10px; height:300px; width:400px; border:1px solid red; overflow:hidden; margin-bottom:40px;}
+#tag-cloud1 { position:relative; top:10px; left:10px; height:400px; width:500px; border:1px solid red; overflow:hidden; margin-bottom:40px;}
+#tag-cloud2 { position:relative; top:10px; left:10px; height:300px; width:300px; border:1px solid red; overflow:hidden; margin-bottom:40px;}
+/*Pulsate animation*/
+@keyframes pulsate{50%{color:#fff;text-shadow:0 -1px rgba(0,0,0,.3),0 0 5px #FBF3EC,0 0 8px #FBF3EC;}}
+
+/*General styles*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+/*BLOCK 1*/
+.header-wrap{
+	max-width:100%;
+	background-image: url("../images/clock.jpg");
+	background-repeat:no-repeat;	
+	background-size: cover;
+}
+
+.header{
+	 max-width:100%;
+	 color:#122B69;
+	 height: 180px;
+}
+
+div.col-sm{
+	height:100%;
+	width:100%;
+	padding:0;
+}
+/*Top quote*/
+.top-quote{
+    color: rgb(245,245,245);
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    font-size: 32px;
+    font-weight: 600;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;  
+	display: flex;
+    align-items: center
+}
+
+.top-quote p{
+	margin: 0;
+	line-height:1.2;
+	font-family:Raleway ExtraBold;
+	font-size:28px;
+}
+/* .top-quote p{ */
+	/* font-family:Raleway ExtraBold; */
+	/* font-size:28px; */
+	/* margin: 0; */
+	/* position: absolute; */
+	/* width:80%; */
+	/* top: 50%; */
+	/* left: 50%; */
+	/* -ms-transform: translate(-50%, -50%); */
+	/* transform: translate(-50%, -50%);  */
+/* } */
+/*Tag cloud*/
+a.a-cloud{
+	color:#122B69;
+	text-decoration:none;
+	font-family:Raleway SemiBold;
+}
+
+a.a-cloud:hover{
+	text-decoration:none;
+}
+
+ul#tag-cloud{
+	height:200px;
+	width:100%;
+	margin:0;
+	padding:0;
+	border:none;
+}
+#tag-cloud{
+	top:0;
+	left:0;
+}
+/*TopNav*/
+.wrap-wrap{
+	max-width:1200px;
+	text-align:center;
+	margin:15px auto;
+}
+
+.nav-wrap{
+	display:inline-block;
+	opacity:0.9;
+}
+
+.topnav {
+	background-color: #122B69;
+	overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+	font-family:Raleway SemiBold;
+    font-size: 15px;
+	/* width: 171px; */
+}
+
+.topnav a:not(:last-child):hover{
+	color:white;
+	text-decoration:none;
+	background-color:#2C3E6B;
+}
+
+/* .topnav a.active { */
+    /* background-color: #4CAF50; */
+    /* color: white; */
+/* } */
+
+.topnav .icon {
+    display: none;
+}
+
+/*Slogan*/
+.slogan{
+	border-radius:15px;
+	background-color:#122B69;
+	opacity:0.8;
+	max-width:1200px;
+	padding:20px;
+	margin:0 auto 15px auto;
+	color:white;
+	text-align:center;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    color:#F89E6A;
+}
+
+.slogan h1{
+	font-size:54px;
+}
+.slogan h2{
+	color:white;
+	font-size:24px;
+	font-weight:bold;
+}
+.slogan p{
+	font-size:28px;
+	font-weight:bold;
+}
+
+/*Description*/
+.flex-container {
+	max-width:1200px;
+	margin:0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.flex-container > div {
+	width: 50%;
+	text-align: center;
+	background-color: #122B69;
+	color:#FA986E;
+	opacity:0.8;
+	padding:15px;
+	border-radius:10px;
+	font-family:Raleway SemiBold;
+	text-align:justify;
+}
+
+.flex-container-left{
+	margin:15px 10px 0 0;
+}
+
+.flex-container-right{
+	margin:15px 0 0 10px;
+}
+
+.flex-container div p {
+	margin-bottom:0;
+}
+
+/*Request*/
+.request{
+	max-width:1200px;
+	margin:35px auto;
+	padding:15px;
+	background-color:#122B69;
+	opacity:0.9;
+	border-radius:5px;
+	color:#FBF3EC;
+	font-family:Raleway SemiBold;
+	font-size:20px;
+}
+.request button.btn{
+	opacity:1;
+	margin-bottom:10px;
+	width:200px;
+}
+.request button.btn:hover{
+	background-color:#00FF00;
+	color:#FBFCFC;
+}
+
+/*Request Form*/
+.open-button{
+	background-color:#1DA74D;
+	border-radius:5px;
+	color: white;
+	padding: 12px 16px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.form-popup {
+	display: block;
+	position: fixed;
+	bottom: 50%;
+	right: -330px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+	transform:translate(0,50%);
+}
+
+.form-container {
+	max-width: 320px;
+	padding: 25px;
+	background-color: white;
+	transition:width 2s;
+}
+.form-container:hover{
+	width:500px;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+.form-container .btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 16px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
+	font-size:18px;
+	margin:25px 0 10px 0;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.form-container h1{
+	font-size:22px;
+	font-family:Montserrat Light;
+	text-align:center;
+	padding:40px 0 25px 0;
+}
+
+.form-container span{
+	 position:fixed;
+	 top:20px;
+	 right:20px;
+	 font-size:24px;
+	 cursor:pointer;
+}
+
+/*Arrows*/
+.arrow{
+	color:white;
+	font-size:100px;
+}
+
+/*BLOCK 2*/
+.second-wrap{
+	max-width:100%;
+	background-image: url("../images/ns.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+.content{
+	max-width:1200px;
+	display:flex;
+}
+
+.column{
+	background-color:#F09666;
+	margin:20px 10px 20px 10px;
+	opacity:0.8;
+	border-radius:5px;
+	width:50%;
+}
+.column img{
+	width:100%;
+	height:100%;
+}
+
+/*Top-Quotes*/
+.second-wrap h1,.second-wrap p.butie{
+	animation: pulsate 2s linear infinite;
+	background-image: linear-gradient(to bottom, #F9A26C, #424A6B);
+	height:90px;
+	border-radius:5px;
+	text-align:center;
+	color:white;
+	font-size:24px;
+	font-family:Raleway Semibold;
+}
+.second-wrap p.butie{
+	height:90px;
+	line-height:90px;
+}
+
+.second-wrap-p{
+	color:#122B69;
+	outline:1px solid #F69070;
+	font-family:Raleway SemiBold;
+	font-size:16px;
+	margin-top:16px;
+	padding:0 14px;
+	text-align:justify;
+}
+
+/*BLOCK 3*/
+.third-wrap{
+	height:100%;
+	max-width:100%;
+	/* background-image: linear-gradient(to bottom, #001F33, #C18167); */
+	background-image: url("../images/footer-arkaplan1.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.roy{
+	margin-top:45px;
+	background-color:#122C5B;
+	opacity:0.9;
+	padding:15px;
+}
+
+.text-block{
+	width:65%;
+}
+.img-block{
+	width:35%;
+}
+
+.img-block img{
+	width:100%;
+	height:100%;
+}
+
+.text-block h1{
+	color:#FDEAE1;
+	font-size:24px;
+	width:80%;
+}
+.text-block h2{
+	color:#FDEAE1;
+	font-size:16px;
+	width:100%;
+	text-align:center;
+}
+.text-block p{
+	color:#FB9B71;
+	font-size:14px;
+	font-family:Raleway SemiBold;
+	text-align:left;
+}
+
+.but{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.but button{
+	width:250px;
+	font-family:Raleway SemiBold;
+	font-size:18px;
+}
+
+.social-img{
+	cursor:pointer;
+}
+/*ADAPTIVE*/
+@media (min-width: 768px) and (max-width: 1200px) {
+	.second-wrap h1,.second-wrap p.butie{font-size:18px;}
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+	.top-quote p{font-size:22px;}
+	p.callback-request{font-size:16px;}
+	p.p-register{font-size:20px;}
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.second-wrap h1,.second-wrap p.butie{font-size:16px;}
+	.top-quote p{font-size:20px;}
+	.cloud-wrap{display:none;}
+	span.arrow{font-size:50px;}
+	div.flex-container div{text-align:left;}
+	.column p{text-align:left;}
+	img.callback{width:40px;height:40px;}
+	img.goTop{width:40px;height:40px;}
+	p.callback-request{font-size:16px;}
+	p.p-register{font-size:20px;}
+	.img-block{width:0;}.text-block{width:100%;}
+	.roy{margin-top:5px;}
+}
+@media (min-width: 320px) and (max-width: 479px) {
+	.cloud-wrap{display:none;}
+	img.callback{width:40px;height:40px;}
+	img.goTop{width:40px;height:40px;}
+	.top-quote p{font-size:20px;}
+	.slogan h2{font-size:16px;}
+	.slogan p{font-size:18px;line-height:1.2;}
+	div.flex-container div{text-align:left;}
+	.column p{text-align:left;}
+}
+@media (min-width: 320px) and (max-width: 650px) {
+	.header{
+		height:80px;
+		width:100%;
+	}
+	div.col-sm.top-quote{width:100%;}
+	div.top-quote p{
+		font-size:16px;
+		font-family:Raleway Medium;
+		padding-left:15px;
+	}
+	.wrap-wrap{
+		margin-top:0;
+		margin-bottom:5px;
+	}
+	.slogan{
+		padding:0 5px;
+		margin-bottom:0;
+		border-radius:0;
+	}
+	.slogan h1{font-size:40px;}
+	.slogan h2{
+		color:white;
+		font-size:14px;
+	}
+	.slogan p{font-size:18px;}
+	.flex-container{display:block;}
+	.flex-container div{
+		width:100%;
+		border-radius:0;
+	}
+	.flex-container-left,.flex-container-right{margin:5px 0;}
+	.flex-container div p{
+		text-align:left;
+		font-size:14px;
+		font-weight:100;
+	}
+	.request{
+		margin:0;
+		font-size:16px;
+		padding:10px 0;
+		border-radius:0;
+	}
+	.request p{
+		margin:5px;
+		text-align:center;
+		line-height:1.2;
+	}
+	div#asddd{display:none;}
+	div.content.mx-auto.justify-content-center.h-100{display:block;}
+	.column{
+		width:100%;
+		margin:0 0 5px 0;
+		border-radius:0;		
+	}
+	div.col-img.container{padding:0;}
+	.second-wrap-p{padding:0;}
+	.column h1,.column p.butie,.column p.callback-request{font-size:16px;}
+	.img-block{display:none;}
+	.text-block{width:100%;}
+	#column-wrap{max-width:100%;}
+	.text-block h1{
+		width:100%;
+		font-size:18px;
+		text-align:center;
+	}
+	.text-block p{
+		width:100%;
+		text-align:center;
+	}
+	.roy{margin-top:15px;}
+}
+
+
+
+
+
+
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media (min-width: 320px) and (max-width: 880px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+		float: right;
+		display: block;
+     }
+    .nav-wrap{width:100%;}
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+    }
+    .topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+    } 
+}
