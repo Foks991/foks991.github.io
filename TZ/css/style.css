@@ -1,0 +1,261 @@
+h1{
+	text-align:center;
+}
+.wrap{
+	max-width:1200px;
+	margin:0 auto;
+	background-color:white;
+	opacity:0.9;
+}
+																	/* <!-- ============ TASK 1 ============ --> */
+/*Parallax*/
+canvas {
+    display: block;
+    margin: 2em;
+}
+
+.bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: -webkit-linear-gradient(bottom, #d7dde6 40%, #97a8c0 80%);
+    background-image: linear-gradient(to top, #d7dde6 40%, #97a8c0 80%);
+    background-size: cover;
+    max-width: 100%;
+    height: 200vh;
+}
+/*KeyFrame*/
+button{
+	background-color:lime;
+	text-align:center;
+}
+
+#anime{
+	max-width:350px;
+	height:50px;
+	border:1px solid black;
+	margin:0 auto;
+	animation:showDiv 2s;
+	display:none;
+	color:white;
+	background-image:linear-gradient(to bottom right, #7828E1 , blue);
+	border-radius:15px;
+	font-size:24px;
+}
+
+#anime p{
+	text-align:center;
+	line-height:50px;
+}
+
+@keyframes showDiv {
+    0% {transform: scale(0);background-color:white;color:black;} 
+    50% {transform: scale(1);background-color:black;color:white;}
+    75%{transform:rotateX(360deg);}
+}
+																/* <!-- ============ TASK 2 ============ --> */
+.task2{
+	outline:1px solid black;
+	max-width:500px;
+	margin:50px auto 0;
+	text-align:center;
+}
+
+p{
+	margin:0;
+}
+/* <!--Option 1--> */
+span{
+	width:50px;
+	text-align:center;
+	display:inline-block;
+}
+/* <!--Option 2--> */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.flex-container > p {
+    width:50px;
+    font-size: 30px;
+}
+/* <!--Option 3--> */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width:300px;
+    margin:0 auto;
+}
+.grid-container > p {
+    text-align: center;
+    width:50px;
+    font-size: 30px;
+}
+															/* <!-- ============ TASK 3 ============ --> */														
+ table,th,td{
+	border:1px solid black;
+ }
+ 
+ .table{
+	max-width:1200px;
+	height:300px;
+	margin:0 auto;
+	display:block;
+ }
+ 
+ table{
+	border-collapse:collapse;
+	font-size:16px;
+	width:100%;
+	height:100%;
+ }
+ 
+ th{
+	height:55px;
+ }
+ td{
+	text-align:center;
+ }															
+		
+td input{
+	width:45px;
+	margin:10px;
+}	
+
+.card{
+	max-width:767px;
+	margin:0 auto;
+	background-color:white;
+	padding:10px;
+	position:relative;
+    grid-template-columns: 25% 75%;
+	display:none;
+	margin-bottom:5px;
+	outline:1px solid black;
+}
+
+.card > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+.card span{
+	position:absolute;
+	top:10px;
+	right:0;
+	font-size:30px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+.text-block{
+	text-align:left;
+	margin-left:30px;
+}
+
+.description{
+	text-align:left;
+	padding-left:25px;
+}
+
+.img2{
+	display:none;
+}
+.inp{
+	margin-top:50px;
+}
+.inp input{
+	margin:0 20px;
+}					
+																		/* <!-- ============ TASK 4 ============ --> */
+form input{
+	margin:5px;
+}
+
+@keyframes showForm {
+  from {transform: scale(0);} 
+  to {transform: scale(1);}
+}
+
+#formWrap{
+    width:350px;
+    height:260px;
+    border-radius:10px;
+    background-color: #C8C8C8;
+    position: relative;
+	margin:50px auto;
+	animation:showForm 2s;
+	display:none;
+}
+
+#headForm{
+    width:350px;
+    height:70px;
+    background-color:#1DD67D;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+p#status{
+    color:white;   
+    margin: 25px auto 0 auto;
+    width: 100%;
+    font:20px arial;
+    position: absolute;
+    text-align: center;
+}
+
+p#msg{
+    width:50%;
+    margin: auto;
+    padding: 40px 0 40px 0;
+	text-align:center;
+	font-weight:bold;
+	font-size:18px;
+}
+
+#butt{
+    width:50%;
+    height:40px;
+    margin:auto;
+}
+#successButton{
+    width:100%;
+    height:100%;
+    background-color:#1DD67D;
+    border:1px solid #1DD67D;
+    border-radius: 5px;
+    color:white;
+    font:18px arial;
+	cursor:pointer;
+}
+
+																		/* <!-- ============ TASK 5 ============ --> */
+.watches{
+	max-width:500px;
+	margin:0 auto;
+}																		
+.watches img{
+	max-width:100%;
+}											
+@media screen and (max-width: 767px){
+	table{display:none;}
+	.card{display:grid;}
+}
+@media screen and (max-width: 575px){
+	.img1{display:none;}
+	.img2{display:block;}
+	.text-block{font-size:18px;}
+	.inp{margin:0;}
+	.img-block{align-items:center;justify-content:center;}
+	.card span{font-size:15px;}
+	/* .card{display:block;} */
+}

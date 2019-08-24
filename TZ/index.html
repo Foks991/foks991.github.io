@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="En">
+<head>
+    <title>заготовка</title>
+	<meta charset="utf-8">																				  <!--charset-->
+	<link rel="icon" type="image/png" sizes="32x32" href="images/default.png"/>							  <!--favicon-->
+    <link rel="stylesheet" href="css/style.css">														  <!--Css-->
+	<script src="js/script.js"></script>															 	  <!--js-->
+    <script src="js/Canvallax.min.js" defer></script>													  <!--Parallax-->
+	<script src="js/clouds.js" defer></script>															  <!--Parallax-->
+	<script src="jquery/jquery-3.3.1.min.js" async></script>											  <!--Jquery-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">								  <!--viewport-->	
+</head>
+
+<body>
+<div class="wrap">
+																						<!-- ============ TASK 1 ============ -->
+<!-- Keyframe -->
+	<h1>Task 1</h1>
+	<div style="width:50px;margin:10px auto;">
+		<button onclick="openLoginForm()">Animate</button>
+	</div>
+	<div id="anime">
+		<p><span>&lt;</span>KEYFRAME<span>&gt;</span></p>
+	</div>															
+																						<!-- ============ TASK 2 ============ -->
+<!--Option 1-->
+	<h1>Task 2</h1>
+	<div class="task2">
+		<div class="block">
+			<p><span>Ш</span><span>А</span><span>Ш</span><span>К</span><span>А</span></p>
+			<p><span>З</span><span>А</span><span>Л</span><span>О</span><span>Г</span></p>
+		</div>
+		<hr>
+<!--Option 2-->
+		<div class="flex-container">
+			<p>Ш</p>
+			<p>А</p>
+			<p>Ш</p>
+			<p>К</p>  
+			<p>А</p>    
+		</div>
+		<div class="flex-container">
+			<p>З</p>
+			<p>А</p>
+			<p>Л</p>
+			<p>О</p>  
+			<p>Г</p>    
+		</div>
+		<hr>
+<!--Option 3-->
+		<div class="grid-container">
+			<p>Ш</p>
+			<p>А</p>
+			<p>Ш</p>  
+			<p>К</p>  
+			<p>А</p>  
+		</div>
+		<div class="grid-container">
+			<p>З</p>
+			<p>А</p>
+			<p>Л</p>  
+			<p>О</p>  
+			<p>Г</p>  
+		</div>
+		<hr>
+	</div>	
+																					<!-- ============ TASK 3 ============ -->
+	<h1>Task 3</h1>
+	<p style="text-align:center;font-size:24px;">Resize to result</p>
+	<div class="table">
+		<table>
+			<tr>
+				<th>Фото</th>
+				<th>Категория</th>
+				<th>Название</th>
+				<th>Цена</th>
+				<th>Кол.</th>
+				<th>Сумма</th>
+			</tr>
+			<tr>
+				<td><img src="images/1.png"></td>
+				<td>Кубик Рубика</td>
+				<td>Floppy Ghost cube MofangGe</td>
+				<td>125</td>
+				<td><input type="number"  min="1" max="100" placeholder="1"></td>
+				<td>125</td>
+			</tr>
+			<tr>
+				<td><img src="images/2.png"></td>
+				<td>Кубик Рубика</td>
+				<td>Mastermorphix MofangGe</td>
+				<td>140</td>
+				<td><input type="number"  min="1" max="100" placeholder="1"></td>
+				<td>140</td>
+			</tr>
+			<tr>
+				<td><img src="images/3.png"></td>
+				<td>Кубик Рубика</td>
+				<td>Magnetic SkewB X-Man Wingy Concave MofangGe</td>
+				<td>390</td>
+				<td><input type="number"  min="1" max="100" placeholder="1"></td>
+				<td>390</td>
+			</tr>
+		</table>
+		
+		<div class="card">
+			<span>&#10006;</span>
+			<div class="img-block"><img class="img1" src="images/11.png"><img class="img2" src="images/111.png"></div>
+			<div class="description" >
+				<div class="text-block">
+					<p>Кубик Рубика</p>
+					<p>Floppy Ghost cube MofangGe</p>
+					<p class="inp">125<input type="number"  min="1" max="100" placeholder="1" style="width:50px;height:25px;">125</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<span>&#10006;</span>
+			<div class="img-block"><img class="img1" src="images/22.png"><img class="img2" src="images/222.png"></div>
+			<div class="description" >
+				<div class="text-block">
+					<p>Кубик Рубика</p>
+					<p>Mastermorphix MofangGe</p>
+					<p class="inp">140<input type="number"  min="1" max="100" placeholder="1" style="width:50px;height:25px;">140</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<span>&#10006;</span>
+			<div class="img-block"><img class="img1" src="images/33.png"><img class="img2" src="images/333.png"></div>
+			<div class="description" >
+				<div class="text-block">
+					<p>Кубик Рубика</p>
+					<p>Magnetic SkewB X-Man Wingy Concave MofangGe</p>
+					<p class="inp">390<input type="number"  min="1" max="100" placeholder="1" style="width:50px;height:25px;">390</p>
+				</div>
+			</div>
+		</div>
+																				<!-- ============ TASK 4 ============ -->
+		<div style="background-color:white;">																		
+			<h1>Task 4</h1>	
+			<form method="POST" action="/"  style="text-align:center;" onsubmit="sendData();return false">
+				Значение a <input type="number" value="3" name="a" class="add"><br>
+				Значение b <input type="number" value="5" name="b"><br>
+				Значение c <input type="number" value="7" name="c" class="add"><br>
+				<input type="submit">
+			</form>	
+			<div id="formWrap">
+				<div id="headForm">
+					<p id="status">Success!</p>
+				</div>
+				<div id="content">
+					<p id="msg"></p>
+					<div id="butt">
+						<button onclick="closeForm()" id="successButton">Ok</button>
+					</div>
+				</div>
+			</div>		
+																					<!-- ============ TASK 5 ============ -->
+			<h1>Task 5</h1>	
+			<div class="watches">
+				<img src="images/watches.png"/>
+			</div>
+			<div style="max-width:500px;margin:0 auto;">
+				<ul style="text-align:center; list-style:none;">
+					<li>Паламарчук Артём Андреевич</li>
+					<li>050-575-80-94</li>
+					<li>Киев</li>
+					<li>полная занятость</li>
+					<li>10к</li>
+				</ul>
+			</div>	
+		</div>		
+	</div>	
+</div>	
+
+</body>	
+	
+</html>
