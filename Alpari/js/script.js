@@ -50,12 +50,17 @@ $(document).ready(function(){
 /*Responsive Menu*/	
 /*===============*/	
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+	var x = document.getElementById("myTopnav");
+	var navHeight = (x.offsetHeight)*7;
+	x.style.height = navHeight + "px";
+	x.style.transition = "height 1s";
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.style.transition = "none";
+		x.className = "topnav";
+		x.style.height = "54px";
+	}
 }
 /*===============*/
 /*Скролл вверх страницы*/	

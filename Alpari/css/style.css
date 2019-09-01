@@ -118,9 +118,15 @@ ul#tag-cloud{
 
 .topnav {
 	background-color: #122B69;
-	overflow: hidden;
+	overflow: hidden;	
+}
+#myTopnav{
+	height:54px;
 }
 
+/* div#myTopnav.topnav:hover{ */
+	/* height:400px; */
+/* } */
 .topnav a {
     float: left;
     display: block;
@@ -144,7 +150,7 @@ ul#tag-cloud{
     /* color: white; */
 /* } */
 
-.topnav .icon {
+a.icon {
     display: none;
 }
 
@@ -552,6 +558,7 @@ ul#tag-cloud{
 		right: 0;
 		top: 0;
     }
+	
     .topnav.responsive a {
 		float: none;
 		display: block;
