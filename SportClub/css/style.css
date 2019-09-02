@@ -46,7 +46,7 @@ button.btn:focus, button.btn:active {
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= MAIN -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 .wrap {
   height: 100vh;
-  background-image: url("../images/layout.png");
+  background-image: url("../images/Layout.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #F0F4F5; }
