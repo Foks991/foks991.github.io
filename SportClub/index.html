@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>SportClub</title>																							<!--title-->
+	<link rel="icon" type="image/png" sizes="32x32" href="images/fav.png"/>							 					<!--favicon-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">						<!--font-->
+	<meta charset="utf-8">																								<!--charset-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">								 				<!--viewport-->
+	<link rel="stylesheet" href="css/style.css">														  				<!--css-->
+	<link rel="stylesheet" href="css/burger-menu.css">														  			<!--css-->
+	<link rel="stylesheet" href="css/normalize.css">													 				<!--Normalize Css-->
+	<script src="js/script.js" defer></script>																 			<!--js-->
+	<script src="js/date.js" defer></script>																			<!--js-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>							<!--jquery-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">	 			<!--Bootstrap-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>	  				<!--Bootstrap-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>			 				<!--Bootstrap-->
+</head>
+
+<body>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= MAIN -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+	<div class="wrap">
+	
+		<div class="header-wrap">
+			<div class="header d-flex">
+				<h2 class="logo">FITNE<span class="orange_letters">SS</span></h2>
+				
+				<ul class="nav navig">
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">PAGE</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">CONTACTS</a></li>
+				</ul>
+				
+				<ul class="nav auth ml-auto">
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#">SING UP</a></</li>
+					<li><a href="#">CHOSE PLAN</a></li>
+				</ul>
+
+				<ul class="burger-menu">
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">PAGE</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">CONTACTS</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#">SING UP</a></li>
+					<li><a href="#">CHOSE PLAN</a></li>
+				</ul>
+
+				<div class="burger-menu-button">
+					<input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden">
+					<label for="checkbox4">
+						<div class="hamburger hamburger4">
+							<span class="bar bar1"></span>
+							<span class="bar bar2"></span>
+							<span class="bar bar3"></span>
+							<span class="bar bar4"></span>
+							<span class="bar bar5"></span>
+						</div>
+					</label>
+				</div>
+				
+			</div>
+		</div>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= TITLE + BANNER  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+		<div class="title-wrap">
+		
+			<div class="main-text">
+				<h1 class="title">MAKE YOUR BODY <br><span class="orange_letters">BEAUTIFUL</span></h1>
+				<p>Lorem ipsum dolor sit amet, consectetur</p>
+				<div class="getintouch">
+					<button class="btn">GET IN TOUCH</button>
+				</div>
+			</div>
+			
+			<div class="banner">
+				<img src="images/BgFrom.png" alt="BgFrom">
+				<div class="record">
+					<p class="free">FREE 7 DAYS</p>
+					<p class="online-booking">ONLINE BOOKING</p>
+					<form class="flex-container">
+						<select autofocus name="people">
+							<option>2 people</option>
+							<option>1 people</option>
+							<option>3 people</option>
+							<option>4 people</option>
+						</select>
+						<input id="dateee" type="text">
+						<select autofocus required name="time" value="time">
+							<option>Time</option>
+							<option>9:00</option>
+							<option>11:00</option>
+							<option>13:00</option>
+							<option>15:00</option>
+							<option>17:00</option>
+							<option>19:00</option>
+						</select>
+						<input type="text" placeholder="Name">
+						<input type="tel" placeholder="Phone">
+						<input type="email" placeholder="Email">
+					</form>
+					<!-- <div class="butn"> -->
+						<button class="btn" type="button" name="button">GET IN TOUCH</button>
+					<!-- </div> -->
+				</div>
+			</div>
+			
+		</div>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= BLOCK WITH TRIANGLE PHOTO -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+	<div class="triangle-wrap container-fluid">
+		<div class="row">					
+			<div class="column left">
+				<p class="welcome_to_fitness">WELCOME TO <span class="orange_letters">FITNESS</span></p>
+				<p class="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+				<p class="text22">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+				<button class="btn" type="button" name="button">GET IN TOUCH</button>
+			</div>					  
+			<div class="column triangle">
+				<img src="images/triangle.png" alt="sport">
+			</div>
+		</div>
+	</div>	
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= THREE PHOTOS WITH BUTTONS BLOCK -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+		<div class="three_photos_wrap">
+			<div class="three-photos">
+				<p class="welcome_to_fitness">WELCOME TO <span class="orange_letters">FITNESS</span></p>
+				<p class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+				<div class="d-flex flex-wrap justify-content-center mt-5 ">
+					<div class="item">
+						<img src="images/fit.png" alt="">
+						<div class="text_block">
+							<p class="fit-type">Basic Crossfit</p>
+							<p class="fit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<button class="btn" type="button" name="button">GET IN TOUCH</button>
+						 </div>
+					</div>
+					<div class="item center-item">
+						<img src="images/fit1.png" alt="">
+						<div class="text_block">
+							<p class="fit-type">Fitness Studio</p>
+							<p class="fit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<button class="btn" type="button" name="button">GET IN TOUCH</button>
+						</div>
+					</div>
+					<div class="item">
+						<img src="images/fit2.png" alt="">
+						<div class="text_block">
+							<p class="fit-type">Yoga Classes</p>
+							<p class="fit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<button class="btn" type="button" name="button">GET IN TOUCH</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= PERSONAL TRAINER BLOCK -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+		<div class="personal_trainer_block">
+			<div class="text_center_absolute_block text-center">
+				<p class="tb1">WE TRAINED WITH</p>
+				<p class="tb2">PERSONAL TRAINER</p>
+				<button class="btn" type="button" name="button">GET IN TOUCH</button>
+			</div>
+		</div>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= NEXT THREE PHOTOS BLOCK -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+		<div class="three_photos_wrap">
+			<div class="three-photos">
+				<p class="welcome_to_fitness">EXPERT <span class="orange_letters">TRAINERS</span></p>
+				<p class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+				<div class="d-flex flex-wrap justify-content-center mt-5 text-center">
+					<div class="item outline">
+						<img src="images/expert.png" alt="">
+						<div class="text_block">
+							<p class="fit-type">SARRA MILLER</p>
+							<p class="fit-type1">SPINNING TRAINER</p>
+							<p class="fit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+						</div>
+					</div>
+					<div class="item outline center-item">
+						<img src="images/expert1.png" alt="">
+						<div class="text_block">
+							<p class="fit-type">JOHN DOE</p>
+							<p class="fit-type1">BOOTCAMP TRAINER</p>
+							<p class="fit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+						</div>
+					</div>
+					<div class="item outline">
+						<img src="images/expert2.png" alt="">
+						<div class="text_block">
+							<p class="fit-type">JACK CONNOR</p>
+							<p class="fit-type1">SPINNING TRAINER</p>
+							<p class="fit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= TWO PHOTOS BLOCK -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+		<div class="container-fluid">
+			<div class="two_photos_wrap row">
+				<div class="col-sm-6 p-0">
+					<img src="images/freepng.png" alt="sport">
+					<div class="text_center_absolute_block text-center">
+						<p class="tb3">TRU FOR FREE</p>
+						<p class="tb4">FREE 5 DAYS</p>
+						<button class="btn" type="button" name="button">GET IN TOUCH</button>
+					</div>
+				</div>
+				<div class="col-sm-6 p-0">
+					<img src="images/callus.png" alt="sport">
+					<div class="text_center_absolute_block text-center">
+						<p class="tb3">CALL US AND TRU</p>
+						<p class="tb4">957 547 4545</p>
+						<button class="btn" type="button" name="button">GET IN TOUCH</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= FOOTER BLOCK -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+		<div class="footer_wrap">
+			<div class="footer p-0 pt-5 pb-5 d-flex flex-wrap text-white justify-content-center">
+				
+				<div class="footer_block p-3" >
+					<p class="footer_title">FITNE<span class="orange_letters">SS</span></p>
+					<p class="footer_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p class="follow">FOLLOW US:</p>
+					<a href="#"><img class="icon" src="images/icons/1.png" alt=""></a>
+					<a href="#"><img class="icon" src="images/icons/2.png" alt=""></a>
+					<a href="#"><img class="icon" src="images/icons/3.png" alt=""></a>
+					<a href="#"><img class="icon" src="images/icons/4.png" alt=""></a>
+					<a href="#"><img class="icon" src="images/icons/5.png" alt=""></a>
+					<a href="#"><img class="icon" src="images/icons/6.png" alt=""></a>
+					<a href="#"><img class="icon" src="images/icons/7.png" alt=""></a>
+					<a href="#"><img class="icon" src="images/icons/8.png" alt=""></a>
+					<div class="inp-but">
+						<input type="text" placeholder="Your Email"/>
+						<button type="button" name="button" >SUBSCRIBE</button>
+					</div>
+				</div>
+
+				<div class="footer_block p-3 two">
+					<p class="footer_title">BLOGS</p>
+					<div>
+						<a href="#"><img src="images/blogs/blog.png" alt=""></a>
+						<p class="pimg" >Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
+					</div>
+					<div>
+						<a href="#"><img src="images/blogs/blog1.png" alt=""></a>
+						<p class="pimg">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
+					</div>
+					<div>
+						<a href="#"><img src="images/blogs/blog2.png" alt=""></a>
+						<p class="pimg">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+
+				<div class="footer_block p-3">
+					<p class="footer_title">INSTAGRAM</p>
+					<div class="container p-0">
+						<div class="d-flex flex-wrap justify-content-center">
+							<a href="#"><img src="images/instagram/insta.png" alt=""></a>
+							<a href="#"><img src="images/instagram/insta1.png" alt=""></a>
+							<a href="#"><img src="images/instagram/insta2.png" alt=""></a>
+							<a href="#"><img src="images/instagram/insta3.png" alt=""></a>
+							<a href="#"><img src="images/instagram/insta4.png" alt=""></a>
+							<a href="#"><img src="images/instagram/insta5.png" alt=""></a>
+							<a href="#"><img src="images/instagram/insta6.png" alt=""></a>
+							<a href="#"><img src="images/instagram/insta7.png" alt=""></a>
+							<a href="#"><img src="images/instagram/insta8.png" alt=""></a>
+						</div>
+						<p class="view">View more photos</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

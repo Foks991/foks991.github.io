@@ -1,0 +1,450 @@
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= GENERAL -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+html {
+  background-color: #F0F4F5; }
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: white; }
+
+.orange_letters {
+  color: #FE733B; } 
+
+.welcome_to_fitness {
+  padding-left:20px;	
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: black; }  
+  
+button.btn {
+  width: 165px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2.1;
+  letter-spacing: 1.6px;
+  background-color: #FE733B;
+  margin-top: 55px;
+  color: white; }
+
+button.btn:focus, button.btn:active {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: white; }
+  
+.center-item{
+  margin-left:30px;
+  margin-right:30px; 
+}
+
+.text_block {
+  padding: 30px; }
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= MAIN -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.wrap {
+  height: 100vh;
+  background-image: url("../images/layout.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F0F4F5; }
+
+.header-wrap {
+  max-width: 1600px;
+  margin: auto; }
+
+.header {
+  padding: 30px 35px 0 35px;
+  position: relative; }
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.4px; }
+
+.navig li:first-child {
+  padding-left: 37px; }
+
+.navig li {
+  font-size: 12px;
+  line-height: 2.5;
+  letter-spacing: 1.4px;
+  padding-left: 25px; }
+
+.auth li:last-child {
+  padding-right: 50px; }
+
+.auth li {
+  font-size: 12px;
+  line-height: 2.5;
+  letter-spacing: 1.4px;
+  padding-right: 40px; }
+
+.nav li a {
+  text-decoration: none;
+  color: white; }
+
+.nav li a:hover {
+  outline: 2px solid white;
+  outline-offset: 10px;
+  color: #FE733B; }
+
+.burger-menu-button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 50px; }
+
+.burger-menu {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  background-color: #F0F4F5; }
+
+.burger-menu li {
+  border-bottom: 1px solid #000; 
+  display:none;
+  }
+
+.burger-menu li a {
+  text-decoration: none;
+  color: #FE733B;
+  font-weight: bold;
+  letter-spacing: 8px; }
+
+.active {
+  opacity: 1; }
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= TITLE + BANNER  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.title-wrap {
+  max-width: 1100px;
+  margin: auto; }
+
+.title {
+  font-size: 70px;
+  font-weight: bold;
+  padding-top: 170px;
+  letter-spacing: 3px;
+  word-spacing: -5px; }
+
+.banner {
+  height: 519px;
+  max-width: 1100px;
+  background-color: white;
+  margin-top: 190px; }
+
+.banner img {
+  float: left;
+  max-width: 100%; }
+
+.banner p {
+  text-align: center;
+  color: black; }
+
+.record {
+  padding-top: 70px; }
+
+.record form{
+  margin-top: 70px;	
+}
+  
+p.free {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.154; }
+
+p.online-booking {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 0.833; }
+  
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.flex-container > input, .flex-container select, select option {
+  width: 170px;
+  margin: 10px;
+  color: black;
+  border: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: "OpenSans"; }
+
+.flex-container > input:focus, .flex-container > input:active {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid black; }
+
+.butn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px; }
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= BLOCK WITH TRIANGLE PHOTO -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.triangle-wrap{
+  max-width:1100px;
+  margin:0 auto;
+}
+
+.left .welcome_to_fitness{
+  padding: 80px 0 30px 0;	
+}
+
+.column {
+  flex: 50%;
+  padding: 20px; }
+
+.text1 {
+  max-width: 420px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2.143;
+  color: black; }
+
+.text2 {
+  padding-left:20px;
+  max-width: 420px;
+  font-size: 16px;
+  line-height: 2.143;
+  color: #BBBDBF; }
+  
+.text22 {
+  max-width: 420px;
+  font-size: 16px;
+  line-height: 2.143;
+  color: #BBBDBF; }
+
+.triangle img{
+  max-width:100%;	
+}  
+/*<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= THREE PHOTOS WITH BUTTONS BLOCK -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->*/
+.three_photos_wrap {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 40px; }
+
+.three-photos {
+  max-width: 1110px;
+  margin: 0 auto; }
+
+.item {
+  max-width: 350px;
+  background-color: #F0F4F5;
+  margin-bottom: 50px; }
+
+.item button {
+  margin: 30px 0 0 0; }
+ 
+.fit-type {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.154;
+  color: black; }
+
+.fit-description {
+  font-size: 16px;
+  color: #161418;
+  line-height: 1.875; }
+
+/*<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= PERSONAL TRAINER BLOCK -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->*/
+.personal_trainer_block {
+  width: 100%;
+  background-image: url("../images/personal.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 586px;
+  position: relative; }
+
+.text_center_absolute_block {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.tb1 {
+  font-size: 36px;
+  color: white;
+  margin: 0; }
+
+.tb2 {
+  font-size: 70px;
+  color: white;
+  font-weight: bold; }
+
+.text_center_absolute_block button {
+  margin-top: 20px; }
+
+/*<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= NEXT THREE PHOTOS BLOCK -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->*/
+.fit-type1 {
+  font-size: 14px;
+  color: #fa7c30;
+  font-weight: bold; }
+
+/*<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= TWO PHOTOS BLOCK -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->*/
+.two_photos_wrap img{
+  width: 100%;	
+}
+
+.tb3 {
+  font-size: 18px;
+  color: white;
+  font-weight: bold; }
+
+.tb4 {
+  font-size: 46px;
+  color: white;
+  font-weight: bold; }
+
+/*<!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= FOOTER -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->*/
+.footer_wrap {
+  max-width: 100%;
+  background-color: #1C1B1E; }
+
+.footer{
+  max-width: 1200px;
+  margin:0 auto;
+}
+  
+.footer_block{
+  max-width:360px;
+}
+
+.footer_title {
+  font-size: 24px;
+  font-weight: bold; }
+
+.footer_description {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.702); }
+
+.follow {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 30px 0;
+  display: inline-block; }
+
+.inp-but input {
+  border: none;
+  outline: none;
+  color:black;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 10px;
+  display: inline; }
+
+.icon {
+  padding: 0 0 3px 4px; }
+
+.inp-but button {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #FE733B; }
+
+.two img {
+  float: left;
+  padding-right: 10px;
+  margin-bottom: 1px; }
+  
+.view{
+  text-align:center;}	
+  
+@media (min-width: 770px) and (max-width: 1200px) {
+  .main-text h1 {
+    font-size: 48px;
+    text-align: center; }
+  .main-text p {text-align: center; }
+  .getintouch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .getintouch button.btn {margin-top: 20px; }
+  .title {padding-top: 100px; }
+  .banner {margin-top: 100px; }
+}
+
+@media (min-width: 320px) and (max-width: 770px) {
+  .outline{outline:1px solid #BBC2D2;}
+  .main-text h1 {
+    font-size: 48px;
+    text-align: center;
+    color: black; }
+  .main-text p {
+    text-align: center;
+    color: black; }
+  /* .logo {color: black; } */
+  .getintouch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .getintouch button.btn {margin-top: 10px; }
+  .banner img {display: none; }
+  p.tb2{font-size:48px;}	
+  div.triangle{display:none; }
+  .left{
+	width:100%;
+	text-align:center; }
+  p.text1,p.text2{
+	margin:0 auto;
+	text-align:center; }
+  p.welcome_to_fitness{
+	text-align:center; }
+  .footer_title{text-align:center;}	
+}
+
+@media (min-width: 320px) and (max-width: 950px) {
+  /* .main-text h1,.main-text p,.logo{color:black;} */
+  .burger-menu-button {display: block;}	
+  .burger-menu li{display: block; }
+  ul.nav {display: none; }
+  .record, .getintouch button.btn {
+    padding: 0;
+    margin: 0; }
+  /* .wrap {background-image: none; } */
+  p.tb4{font-size:24px} }
+  .footer_block{flex-direction:column;}
