@@ -491,7 +491,7 @@ input:focus, button:focus {
   background-size: auto; }
 
 .container_3 {
-  max-width: 1170px;
+  max-width: 1220px;
   margin: 0 auto 0 auto;
   padding: 150px 0 115px 0; }
 
@@ -819,14 +819,12 @@ img.img_5 {
   .legs {
     height: auto;
     width: 100%;
-    left: -150px;
-    position: none; }
+    left: -150px; }
   .packages {
     height: auto;
     width: 100%;
     left: -40px;
-    bottom: -20px;
-    position: none; }
+    bottom: -20px; }
   .right-side {
     position: absolute;
     right: 0; }
