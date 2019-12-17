@@ -1,7 +1,5 @@
 # Foks991.github.io
 
-Portfolio
-
 https://foks991.github.io/Alpari/
 
 https://foks991.github.io/LoginPage/
