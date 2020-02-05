@@ -11,3 +11,5 @@ https://foks991.github.io/SportClub/
 https://foks991.github.io/Waxom/
 
 https://foks991.github.io/Landing/
+
+https://foks991.github.io/Tesla/
