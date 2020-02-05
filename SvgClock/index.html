@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="clockWrap">
+        <svg id="svg" class="testClock" viewBox="0 0 100 100">
+            <rect id="hour" x="49.5" y="20"  stroke-width="1px" fill="black" stroke="black" width="1" height="30" rx="1.5" ></rect>
+            <rect id="minute" x="49.5" y="15"  stroke-width="1px" fill="black" stroke="black" width="1" height="35" rx="1.5" ></rect>
+            <circle cx="50" cy="50" r="48" stroke="black" fill="transparent" stroke-width="3"></circle>
+            <circle cx="50" cy="50" r="43" stroke="black" fill="transparent" ></circle>
+            <circle cx="50" cy="50" r="3"  fill="black" ></circle>
+            <circle cx="50" cy="50" r="3"  stroke="black" fill="red" stroke-width="1"></circle>
+            <circle cx="50" cy="50" r="2"  fill="blue" stroke-width="1"></circle>
+            <line id="second" x1="50" x2="50" y1="58" y2="13.5" stroke="red" stroke-width="0.5" stroke-linecap="round"></line>
+        </svg>
+    </div>
+
+</body>
+    <script src="js/model.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/controller.js"></script>
+</html>

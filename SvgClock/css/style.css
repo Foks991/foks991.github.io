@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clockWrap{
+    width: 500px;
+    height: 500px;
+}
+
+.ky{
+    color: red;
+}
+
