@@ -13,3 +13,13 @@ https://foks991.github.io/Waxom/
 https://foks991.github.io/Landing/
 
 https://foks991.github.io/Tesla/
+
+https://foks991.github.io/CanvasBalls/
+
+https://foks991.github.io/CanvasClock/
+
+https://foks991.github.io/SvgBalls/
+
+https://foks991.github.io/SvgClock/
+
+
