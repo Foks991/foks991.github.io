@@ -59,7 +59,7 @@ body {
   align-items: center;
 }
 .dropdown__menu-arrow {
-  background: url("../images/_arrow-open.svg") no-repeat;
+  background: url("../images/arrow-open.svg") no-repeat;
   height: 24px;
   width: 24px;
   position: absolute;
