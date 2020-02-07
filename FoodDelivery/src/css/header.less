@@ -1,0 +1,148 @@
+@import "variables";
+
+/*---------------------Top Header---------------------*/
+.left-side, .right-side{
+  margin: 0 auto;
+}
+
+.header__info{
+  min-height: 60px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-side, .right-side, .delivery, .call, .login, .basket{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delivery, .call, .login, .basket{
+  height: 100%;
+  padding:0 20px;
+  transition: 0.5s;
+  &:hover{
+    background: @orange;
+    cursor: pointer;
+  }
+}
+
+.call__img, .login__img, .basket__img, .delivery__img{
+  margin-right: 10px;
+}
+
+/*--------------------- Nav ---------------------*/
+
+.header__nav{
+  position: relative;
+  padding:20px;
+  background-color: @grey;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  &__link{
+    display: flex;
+    font-size: 16px;
+    color: @lightgray;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  & li{
+    list-style-type: none;
+    padding:0 15px;
+    border-right: 3px solid @orange;
+    &:last-child{
+      border: none;
+    }
+  }
+
+}
+
+.menu__kitchens, .menu__dishes{
+  display: none;
+  position: absolute;
+  top: 100%;
+  flex-direction: column;
+  background-color: @grey;
+  border-top: 1px solid @lightgray;
+  z-index: 5;
+  & li{
+    color: @lightgray;
+    padding:15px;
+    cursor: pointer;
+    border-right: none;
+    justify-content: left;
+    &:hover{
+      background-color: rgba(158, 158, 163, 0.3);
+    }
+  }
+}
+
+#kitchen, #dish{
+  cursor: pointer;
+}
+
+#kitchenArrow, #dishesArrow{
+  transition: 0.4s;
+  margin:3px 0 0 5px;
+}
+
+.isActiveMenu{
+  display: flex;
+}
+
+.link-wrap{
+  display: flex;
+  align-items: center;
+}
+
+//Nav Menu
+@media (max-width: 768px) {
+  .header__info{
+    margin-bottom: 20px;
+  }
+  .header__nav{
+    padding: 5px;
+  }
+  .nav{
+    display: block;
+  }
+  .nav li{
+    border: none;
+  }
+  .nav li a{
+    margin: 15px auto;
+    justify-content: center;
+  }
+  #dish .nav__link, #kitchen .nav__link{
+    margin-left: 15px;
+  }
+  #kitchenArrow, #dishesArrow{
+    display: flex;
+  }
+  .menu__kitchens, .menu__dishes{
+    position: static;
+    & li{
+      margin: 0 auto;
+    }
+    & li:last-child{
+      border-bottom: 1px solid orange;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery, .call, .login, .basket, .info{
+    height: auto;
+  }
+  .left-side, .right-side{
+    flex-wrap: wrap;
+  }
+  .right-side{
+    margin-top: 15px;
+  }
+}
