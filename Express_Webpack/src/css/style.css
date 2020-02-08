@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  color: #3e3e40;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url("../img/back.png");
+}
+/*# sourceMappingURL=style.css.map */
