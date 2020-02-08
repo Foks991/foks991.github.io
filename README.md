@@ -25,6 +25,6 @@ https://foks991.github.io/SvgClock/
 https://foks991.github.io/Randomizer/
 
 
-http://fooddeliveryy.eu-4.evennode.com/
+http://fooddeliveryy.eu-4.evennode.com/  - хост до 8 марта
 
 
