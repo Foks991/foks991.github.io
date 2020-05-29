@@ -2,6 +2,8 @@
 
 https://foks991.github.io/Alpari/
 
+http://food-delivery.hostenko.net/
+
 https://foks991.github.io/LoginPage/
 
 https://foks991.github.io/TZ/
@@ -24,7 +26,5 @@ https://foks991.github.io/SvgClock/
 
 https://foks991.github.io/Randomizer/
 
-
-http://fooddeliveryy.eu-4.evennode.com/  - хост до 8 марта
 
 
