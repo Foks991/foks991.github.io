@@ -1,6 +1,6 @@
 # Foks991.github.io
 
-https://foks991.github.io/Alpari/
+https://foks991.github.io/Alpari/ 
 
 http://food-delivery.hostenko.net/
 
@@ -24,7 +24,7 @@ https://foks991.github.io/SvgBalls/ Click on field to create one ball, click on 
 
 https://foks991.github.io/SvgClock/
 
-https://foks991.github.io/Randomizer/
+https://foks991.github.io/Randomizer/ Get number from x to y once
 
 
 
