@@ -6,7 +6,7 @@ http://online-quizz.hostenko.net/
 
 https://foks991.github.io/LoginPage/
 
-http://food-delivery.hostenko.net/
+http://food-delivery.hostenko.net/  expires 22.09.20
 
 https://foks991.github.io/Landing/
 
@@ -28,4 +28,4 @@ https://foks991.github.io/TZ/
 
 https://foks991.github.io/Tesla/
 
-https://foks991.github.io/Randomizer/ Get number from x to y once
+https://foks991.github.io/Randomizer/ Get every number from x to y once
